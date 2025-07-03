@@ -1,0 +1,144 @@
+/* */
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+  background-color: #181818;
+  color: #f2f2f2;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+
+.segmento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* segmento titulo del juego*/
+.tituloprincipal {
+  font-size: 3.5rem;
+  font-family: 'Cinzel', serif;
+  color: #f2e4b3;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  font-family: 'Cinzel', serif;
+  color: #d0b682;
+  text-shadow: 1px 1px 3px #000;
+  margin-bottom: 2rem;
+}
+
+#tituloJuego img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* */
+.relato {
+  text-shadow: 2px 2px 8px #000;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-family: 'EB Garamond', serif;
+}
+
+
+#intro > *{
+    text-align: center;
+
+}
+
+
+h2{
+    font-family: 'EB Garamond', serif;
+}
+
+#eleccionPersonaje {
+  text-align: center;
+  padding: 2rem;
+}
+
+.personajes{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; 
+  margin-top: 1.5rem;
+}
+
+.enemigos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.personaje img, .enemigo img {
+  width: 500px; 
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.personaje img:hover , .enemigo img:hover {
+  transform: scale(1.05);
+}
+
+
+#zonaCombate {
+  display: none;
+}
+
+.zona-combate {
+  display: none;
+  background-color: #111;
+  border: 1px solid #444;
+  padding: 15px;
+  color: limegreen;
+  font-family: monospace;
+  text-align: center;
+}
+
+.texto-combate {
+  max-height: 250px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: 14px;
+  color: #222;
+}
+
+.texto-combate {
+  background-color: #111;
+  color: #0f0;
+  padding: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+  font-family:  monospace;
+  border: 1px solid #444;
+}
+
+#pantallaDerrota #pantallaFinal {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}

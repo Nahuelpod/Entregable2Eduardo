@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazmorra del rey demonio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js"  defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- -->
+    <!-- introduccion a la historia del juego-->
+    <div class="segmento" id="tituloJuego"> 
+        <h1 class="tituloprincipal">Mazmorra del rey demonio</h1>
+        <h2 class="subtitulo">El ultimo descenso</h2>
+        <a onclick="mostrarSegmento('intro')"><img src="./assets/portada.webp" alt="Portada del juego"></a>
+    </div> 
+
+    <!-- introduccion al juego -->
+    <div class="segmento" id="intro">
+        <p class="relato" id="relato"> En una tierra olvidada por los dioses, un pequeño pueblo vive bajo la sombra del terror. El Rey Demonio y su legión de criaturas infernales han convertido cada día en una lucha por sobrevivir. Desesperados, los aldeanos alzan su último ruego... y esa plegaria te alcanza a ti: el héroe del que hablan las leyendas, el guerrero que desafía al destino.
+
+        ¿Responderás al llamado? ¿Te atreves a enfrentar al mal en su forma más pura? El destino del mundo está en tus manos.
+        
+        </p>
+        <button onclick="mostrarSegmento('eleccionPersonaje')">Empezar</button>
+    </div>
+
+    <!-- eleccion de personaje -->
+    <div class="segmento" id="eleccionPersonaje">
+        <h2>Elige tu heroe:</h2>
+
+        <div class="personajes">
+            <div class="personaje" data-tipo="espadachin">
+                <img src="./assets/espadachin.webp" alt="Imagen del espadachin">
+            </div>
+            <div class="personaje" data-tipo="mago">
+                <img src="./assets/mago.webp" alt="Imagen del mago">
+            </div>
+            <div class="personaje" data-tipo="arquero">
+                <img src="./assets/arquero.webp" alt="Imagen del arquero">
+            </div>
+        </div>
+    </div>
+
+    <!--  intro del heroe segun elegir previa-->
+    <div class="segmento" id="introHeroe" style="display: none;">
+        <p id="textoIntro"></p>
+        <button id="botonIntro">Empezar</button>
+    </div>
+
+    <!-- pelea de los pisos de la mazmorra-->
+    <div class="segmento" id="mazmorra">
+        
+        <p>Piso Nº: <span id="pisoActual"></span></p>
+        <h2>Con cual demonio te enfrentas:</h2>
+        <div class="enemigos">
+            <div class="enemigo" id="enemigo1" data-index="1">
+                <img src="./assets/demonio1.webp" alt="demonio1">
+            </div>
+            <div class="enemigo" id="enemigo2" data-index="2">
+                <img src="./assets/demonio2.webp" alt="demonio2">
+            </div>
+            <div class="enemigo" id="enemigo3" data-index="3">
+                <img src="./assets/demonio3.webp" alt="demonio3">
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- pelea narrada -->
+    <div class="segmento" id="zonaCombate" style="display: none;">
+        <h2>Combate en curso...</h2>
+        <div id="textoCombate" class="texto-combate"></div>
+            <button id="botonSiguientePiso" style="display: none;">Siguiente piso</button>
+        </div>
+    </div>
+
+    <!-- se ejecuta cuando el heroe pierde -->
+    <div class="segmento" id="pantallaDerrota" style="display: none;">
+        <h2>Has sido derrotado...</h2>
+        <p id="fraseDerrota" class="frase-derrota"></p>
+        <button onclick="location.reload()">Volver a intentar</button>
+    </div>
+
+    <!-- se ejecuta cuando el heroe gana -->
+    <div class="segmento" id="pantallaFinal" style="display: none;">
+        <h2>¡Has vencido al Rey Demonio!</h2>
+        <p>Veinte pisos, incontables batallas, y sangre derramada en cada paso.
+            Te abriste camino a través del dolor y las sombras... pero aún no viste el verdadero horror.
+            Creíste estar cerca del final. Te equivocaste.
+            En lo más profundo de la mazmorra, el aire se vuelve denso, la luz desaparece, y la esperanza se desvanece.
+            El Rey Demonio sonríe, como si ya supiera el resultado.
+            No es una batalla.
+            Es tu juicio final.</p>
+        <button onclick="location.reload()">Volver a intentar</button>
+    </div>
+  
+</body>
+</html>
