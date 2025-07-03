@@ -52,12 +52,13 @@ body {
 
 
 /* */
-.relato {
+.relato, #textoIntro {
   text-shadow: 2px 2px 8px #000;
   font-size: 1.4rem;
   line-height: 1.6;
   white-space: pre-wrap;
   font-family: 'EB Garamond', serif;
+  padding: 10% 0 10% 0;
 }
 
 
@@ -92,7 +93,7 @@ h2{
 }
 
 .personaje img, .enemigo img {
-  width: 500px; 
+  width: 350px; 
   height: auto;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -104,6 +105,9 @@ h2{
   transform: scale(1.05);
 }
 
+#introHeroe {
+  display: none;
+}
 
 #zonaCombate {
   display: none;
@@ -138,6 +142,7 @@ h2{
 }
 
 #pantallaDerrota #pantallaFinal {
+  display: none;
   padding: 2rem;
   color: white;
   text-align: center;
