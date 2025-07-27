@@ -1,8 +1,9 @@
-La idea es, crear un juego al estilo narrativo, que se base en seleccionar un heroe, entrar a una mazmorra y pasar 20 pisos,
-en cada piso selecciona 1 de 3 demonio que podes enfrentar para pasar.
-al pasar los 20 piso se lucha con un boss, que al derrotar gana.
-el heroe tiene estadisticas creadas al azar en un rango establecido.
-los demonios tamb tienen estadisticas creadas al azar segun un rango, basandonos en el piso en el que se encuentre. (mayor piso, mayor dificultad deld emonio)
-si el demonio es derrotado, el heroe gana exp (tamb dada al azar segun lo establecido al demonio) y sube de nivel junto con sus estadisticas.
-haciendo que cada vez que se juegue a la historia, sea siempre diferente lo que pueda pasar.
-el boss si tiene caracteristicas fijas, pero al ser un juego dificil de pasar debido a su azar, es dificil de enfrentar.
+# Mazmorra del Rey Demonio
+
+*Mazmorra del Rey Demonio* es un simulador narrativo interactivo en el que el jugador desciende a través de 20 pisos de una mazmorra infestada de criaturas demoníacas, con el objetivo final de derrotar al Rey Demonio.  
+
+El jugador debe elegir entre tres héroes, cada uno con características y habilidades únicas: el Espadachín, equilibrado y confiable en combate; el Mago, de gran poder ofensivo pero poca resistencia; y el Arquero, rápido y preciso, especializado en ataques críticos.  
+
+En cada piso se presentan tres demonios generados aleatoriamente, cuya dificultad aumenta de acuerdo al avance del jugador. Los combates se desarrollan por turnos y son narrados en tiempo real, mostrando el daño infligido y los puntos de vida restantes de ambos contendientes.  
+
+El juego incorpora elementos aleatorios tanto en las estadísticas de los enemigos como en los resultados de los ataques, haciendo que cada partida sea distinta. Al finalizar cada enfrentamiento, el héroe se recupera antes de continuar al siguiente piso, manteniendo la progresión hasta llegar al combate final contra el Rey Demonio.

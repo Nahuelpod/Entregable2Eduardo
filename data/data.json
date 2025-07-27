@@ -1,0 +1,19 @@
+{
+  "frasesDerrota": [
+    "El silencio devoró tu alma... como a tantos otros que creyeron ser leyenda.",
+    "Tu última palabra fue un suspiro que nadie escuchó. La mazmorra se burla en la penumbra.",
+    "El Rey Demonio ni siquiera se levantó. Uno más cayó sin siquiera causar eco.",
+    "Un rugido. Un golpe. Un fin. Jamás recordarán tu nombre.",
+    "La oscuridad te tragó sin hacer ruido... irónico, ¿no?",
+    "Tus huesos adornan ahora la entrada del piso 3. Ni siquiera llegaste lejos.",
+    "El destino fue claro: no eras el héroe que esperaban. Solo otro intento fallido.",
+    "Un demonio rió. El resto te destrozó. Fin.",
+    "Tus cenizas alimentan el fuego del Rey Demonio. Qué útil resultaste, al final.",
+    "El silencio vuelve a reinar... y tú fuiste su último susurro inútil."
+  ],
+  "introHeroes": {
+    "espadachin": "Has elegido al Espadachín del Silencio, la hoja que corta sin advertencia. Entrenado en monasterios sombríos, aprendió que el ruido es debilidad y que el combate es un arte frío. Su espada no choca: desliza. Su mirada no arde: congela. En él, la calma y la muerte caminan juntas. Cuando habla el filo, el mundo calla.",
+    "mago": "Has elegido al Mago del Silencio, maestro de los susurros arcanos. Criado entre ruinas olvidadas, sus hechizos no retumban: se deslizan como sombras, destruyendo desde adentro. Su poder se manifiesta sin ruido, sin aviso… solo ruina. Nadie escucha su llegada, pero todos sienten su ausencia. Silencioso. Mortal. Incontrolable.",
+    "arquero": "Has elegido al Arquero del Silencio, cazador de lo invisible. Nacido entre las brumas eternas, sus pasos no crujen y su aliento no se ve. Sus flechas viajan sin sonido y golpean con la fuerza del destino. Jamás lo verás, y si lo haces, ya es tarde. El silencio es su arma… y su sentencia."
+  }
+}
