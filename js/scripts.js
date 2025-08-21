@@ -15,7 +15,6 @@ fetch("./data/data.json")
   .then(data => {
     frasesDerrota = data.frasesDerrota;
     introText = data.introHeroes;
-    console.log("Datos cargados correctamente");
   })
   .catch(err => console.error("Error cargando el JSON", err));
 
@@ -234,17 +233,27 @@ function iniciarCombate() {
       };
     } else {
       // Ganó al Rey Demonio
-      setTimeout(() => {
-        mostrarSegmento("pantallaFinal");
-      }, 2000);
+      Swal.fire({
+        title: "¡Has vencido al Rey Demonio!",
+        text: "Tu nombre será recordado en la historia...",
+        icon: "success",
+        confirmButtonText: "Volver a intentar"
+      }).then(() => {
+        location.reload();
+      });
     }
-  } else {
+  }
+  else {
     // Derrota
     const frase = frasesDerrota[Math.floor(Math.random() * frasesDerrota.length)];
-    document.getElementById("fraseDerrota").textContent = frase;
 
-    setTimeout(() => {
-      mostrarSegmento("pantallaDerrota");
-    }, 2000);
+    Swal.fire({
+      title: "Has sido derrotado...",
+      text: frase,
+      icon: "error",
+      confirmButtonText: "Reintentar"
+    }).then(() => {
+      location.reload();
+    });
   }
 }
